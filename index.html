@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-RBWErr19e/WeFjWz6KFq5LOwRNmHsQ0EE4Mr/n38XTg='; style-src 'unsafe-inline'; frame-src https://www.youtube-nocookie.com">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-XA+bgHqg7BpH48rmG1idZjDKV4A9b0AcK1BZnREywK4='; style-src 'unsafe-inline'; frame-src https://www.youtube-nocookie.com">
 <meta name="referrer" content="strict-origin">
 <title>Player</title>
 <style>html,body{margin:0;height:100%;background:#000}iframe{display:block;width:100%;height:100%;border:0}</style>
@@ -15,7 +15,7 @@
   var id = location.hash.slice(1);
   if (!/^[A-Za-z0-9_-]{11}$/.test(id)) return;
   var f = document.createElement("iframe");
-  f.src = "https://www.youtube-nocookie.com/embed/" + id + "?autoplay=1&rel=0&playsinline=1";
+  f.src = "https://www.youtube-nocookie.com/embed/" + id + "?rel=0&playsinline=1&cc_load_policy=0&iv_load_policy=3";
   f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
   f.allowFullscreen = true;
   f.title = "Video";
